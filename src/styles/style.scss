@@ -1,0 +1,40 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(../assets/font/Rubik/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: Rubik-Bold;
+    src: url(../assets/font/Rubik/Rubik-SemiBold.ttf);
+}
+
+h1,
+h2,
+h3 {
+    font-family: Rubik-Bold;
+}
+
+p {
+    font-family: Rubik-Regular;
+}
+
+
+@import "product";
+
+@import "crypto";

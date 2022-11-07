@@ -1,0 +1,371 @@
+$header: #F2F2F2;
+$paragraph: #E0E0E0;
+$bgColor-1: #0D0D2B;
+$btnColor: #3671E9;
+
+@mixin header {
+    font-size: 4.0rem;
+    font-weight: 700;
+    color: $header;
+}
+
+@mixin paragraph {
+    color: $paragraph;
+    font-size: 1.6rem;
+    line-height: 28px;
+}
+
+.container {
+    background-color: $bgColor-1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+    padding-top: 50px;
+
+    .nav-list {
+        display: flex;
+        gap: 50px;
+    }
+
+    ul {
+        display: flex;
+        gap: 50px;
+        margin-top: 15px;
+        list-style: none;
+    }
+
+    li a {
+        font-size: 1.6rem;
+        color: $paragraph;
+        font-weight: 400;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    .nav-list-2 {
+        display: flex;
+        gap: 30px;
+    }
+
+    .login {
+        margin-top: 15px;
+        list-style: none;
+    }
+
+    .divider {
+        border: 1px solid #757373;
+        height: 20px;
+        margin-top: 15px;
+    }
+
+    .register {
+        background-color: $btnColor;
+        border: none;
+        border-radius: 32px;
+        font-size: 1.6rem;
+        color: $header;
+        padding: 14px 32px;
+        cursor: pointer;
+    }
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    position: relative;
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-left: 50px;
+
+        .offer {
+            background-color: #2e2e35;
+            color: $header;
+            border-radius: 10px;
+            width: 350px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            letter-spacing: 0.01rem;
+        }
+
+        .txt-1 {
+            background-color: $header;
+            border-radius: 32px;
+            padding: 5px 10px;
+            color: #0D0D2B;
+            font-size: 1.6rem;
+            margin-right: 15px;
+        }
+    
+       h1 {
+            color: $header;
+            font-size: 6.4rem;
+            font-weight: 700;
+            width: 600px;
+        }
+    
+        .intro-txt {
+            @include paragraph;
+            width: 400px;
+        }
+    
+        .intro-btn {
+            color: $header;
+            display: flex;
+            gap: 20px;
+            background-color: $btnColor;
+            align-items: center;
+            justify-content: center;
+            width: 180px;
+            height: 50px;
+            border-radius: 32px;
+            font-weight: 500;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+    }
+
+
+    .intro-img {
+        width: 35vw;
+        margin-top: -50px;
+    }
+
+    .intro-effect-1 {
+        position: absolute;
+        width: 40%;
+        top: 60%;
+        left: 25%;
+    }
+
+    .intro-effect-2 {
+        position: absolute;
+        width: 40%;
+        top: 60%;
+        left: 50%;
+    }
+}
+
+.stats {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+
+    .stats-flex {
+        display: flex;
+        gap: 20px;
+
+        .stats-img {
+            width: 60px;
+            height: 60px;
+        }
+    
+        .stats-flex-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+    
+            h2 {
+                @include header;
+            }
+        
+            p {
+                @include paragraph;
+            }
+        }
+    }
+}
+
+.why {
+    @extend .section;
+    position: relative;
+
+    .why-img {
+        width: 35vw;
+        margin-top: -50px;
+    }
+
+    .why-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h2 {
+            @include header;
+            width: 500px;
+        }
+    
+        p {
+           @include paragraph;
+            width: 400px;
+        }
+    
+        .why-btn {
+            background-color: $btnColor;
+            color: $header;
+            border: none;
+            width: 150px;
+            height: 50px;
+            border-radius: 24px;
+            font-size: 1.6rem;
+            cursor: pointer;
+        }
+    }
+
+    .why-effect-1 {
+        position: absolute;
+        // bottom: 100%;
+        top: -60%;
+        right: 5%;
+    }
+
+    .why-effect-2 {
+        position: absolute;
+        right: 1%;
+        // top: 85%;
+        bottom: -30%;
+    }
+
+    .why-effect-3 {
+        position: absolute;
+        left: -1%;
+    }
+}
+
+.earn {
+    margin-top: 150px;
+    padding-bottom: 200px;
+    position: relative;
+
+    .earn-flex-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        h2 {
+            @include header;
+        }
+    
+        p {
+            @include paragraph;
+            font-size: 1.8rem !important;
+            width: 510px;
+        }
+    }
+}
+
+.abs {
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    background-color: $header;
+    width: 700px;
+    height: 250px;
+    padding: 40px 30px;
+    border-radius: 15px;
+
+    .abs-flex-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 50px;
+
+        .abs-flex-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            p {
+                font-size: 2.0rem;
+                color: rgba(13, 13, 43, 0.3);
+            }
+
+            hr {
+                border: 1px solid #E0E0E0;
+                width: 300px;
+            }
+        }
+
+        .abs-dot {
+            font-size: 2.5rem;
+            margin-top: -10px;
+            color: #726e6e;
+        }
+
+        .abs-flex-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .abs-flex-3 {
+                display: flex;
+                gap: 20px;
+                justify-content: space-evenly;
+
+                p {
+                    font-size: 2.0rem;
+                    color: rgba(13, 13, 43, 0.3);
+                }
+
+                img {
+                    width: 10px;
+                    height: 15px;
+                }
+            }
+
+            hr {
+                border: 1px solid #E0E0E0;
+                width: 150px;
+            }
+        }
+
+        .abs-btn {
+            background-color: $btnColor;
+            color: $header;
+            border: none;
+            width: 150px;
+            height: 50px;
+            border-radius: 24px;
+            font-size: 1.6rem;
+            margin-top: -20px;
+            cursor: pointer;
+        }
+    }
+
+    .abs-flex-col {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-top: 50px;
+
+        .abs-flex-col-txt-1 {
+            color: #3671E9;
+            font-size: 1.6rem;
+            font-family: Rubik-Bold;
+        }
+
+        .abs-flex-col-txt-2 {
+            font-size: 3.2rem;
+            color: #0D0D2B;
+            font-family: Rubik-Bold;
+
+            .span-txt {
+                color: #3671E9;
+            }
+        }
+
+        .abs-flex-col-txt-3 {
+            font-size: 1.6rem;
+            color: #828282;
+        }
+    }
+}
