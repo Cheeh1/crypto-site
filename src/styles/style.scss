@@ -34,7 +34,25 @@ p {
     font-family: Rubik-Regular;
 }
 
+$header: #F2F2F2;
+$paragraph: #E0E0E0;
+$bgColor-1: #0D0D2B;
+$btnColor: #3671E9;
+
+@mixin header {
+    font-size: 4.0rem;
+    font-weight: 700;
+    color: $header;
+}
+
+@mixin paragraph {
+    color: $paragraph;
+    font-size: 1.6rem;
+    line-height: 28px;
+}
 
 @import "product";
 
 @import "crypto";
+
+@import "features";

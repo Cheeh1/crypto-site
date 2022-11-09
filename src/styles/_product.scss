@@ -1,20 +1,3 @@
-$header: #F2F2F2;
-$paragraph: #E0E0E0;
-$bgColor-1: #0D0D2B;
-$btnColor: #3671E9;
-
-@mixin header {
-    font-size: 4.0rem;
-    font-weight: 700;
-    color: $header;
-}
-
-@mixin paragraph {
-    color: $paragraph;
-    font-size: 1.6rem;
-    line-height: 28px;
-}
-
 .container {
     background-color: $bgColor-1;
 }
@@ -272,6 +255,7 @@ nav {
     height: 250px;
     padding: 40px 30px;
     border-radius: 15px;
+    filter: drop-shadow(5px 5px 5px rgba(9, 4, 19, 0.5));
 
     .abs-flex-row {
         display: flex;
