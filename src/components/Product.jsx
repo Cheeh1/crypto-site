@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from '../assets/icons/Arrow.png'
+import arrow from "../assets/icons/Arrow.png";
 
 function Product() {
   return (
