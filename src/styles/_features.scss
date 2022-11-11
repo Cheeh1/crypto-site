@@ -2,6 +2,13 @@
     background-color: #2B076E;
     padding-top: 100px;
     padding-bottom: 100px;
+    position: relative;
+
+    .fts-bg-effect-1 {
+        position: absolute;
+        top: -1%;
+        left: 10%;
+    }
 
     .fts-header {
         font-size: 4.0rem;
@@ -56,6 +63,12 @@
     .fts-adj-img {
         margin-right: 100px;
     }
+
+    .fts-bg-effect-2 {
+        position: absolute;
+        right: 1%;
+        bottom: 1%;
+    }
 }
 
 .waitlist {
@@ -64,9 +77,11 @@
     background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
     padding-top: 50px;
     padding-bottom: 50px;
+    position: relative;
 
     .waitlist-flex {
        display: flex;
+       position: relative;
        width: 1100px;
        height: 200px;
        gap: 100px;
@@ -79,6 +94,11 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
+
+            .waitlist-bg-effect-1 {
+                position: absolute;
+               top: -1%;
+            }
 
             h3 {
                 font-size: 3.2rem;
@@ -124,8 +144,24 @@
                 font-size: 1.6rem;
                 cursor: pointer;
             }
-        }
+
+            .waitlist-bg-effect-2 {
+                position: absolute;
+                right: 1%;
+                bottom: 1%;
+            }
+        } 
     }
 
-
+    .ftr-effect-1 {
+        position: absolute;
+        left: -5%;
+        top: -20%;
+    }
+    
+    .ftr-effect-2 {
+        position: absolute;
+        right: 10%;
+        top: -20%;
+    }
 }
