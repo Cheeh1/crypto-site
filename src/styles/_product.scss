@@ -57,6 +57,11 @@ nav {
     }
 }
 
+/* mobile navbar*/
+.mobile-nav {
+    display: none;
+}
+
 .section {
     display: flex;
     justify-content: space-evenly;
@@ -73,7 +78,7 @@ nav {
             background-color: #2e2e35;
             color: $header;
             border-radius: 10px;
-            width: 350px;
+            width: 25vw;
             padding-top: 5px;
             padding-bottom: 5px;
             letter-spacing: 0.01rem;
@@ -87,19 +92,19 @@ nav {
             font-size: 1.6rem;
             margin-right: 15px;
         }
-    
-       h1 {
+
+        h1 {
             color: $header;
             font-size: 6.4rem;
             font-weight: 700;
-            width: 600px;
+            width: 45vw;
         }
-    
+
         .intro-txt {
             @include paragraph;
-            width: 400px;
+            width: 30vw;
         }
-    
+
         .intro-btn {
             color: $header;
             display: flex;
@@ -127,7 +132,7 @@ nav {
         width: 40%;
         top: 60%;
         left: 25%;
-        
+
     }
 
     .intro-effect-2 {
@@ -151,16 +156,16 @@ nav {
             width: 60px;
             height: 60px;
         }
-    
+
         .stats-flex-2 {
             display: flex;
             flex-direction: column;
             gap: 10px;
-    
+
             h2 {
                 @include header;
             }
-        
+
             p {
                 @include paragraph;
             }
@@ -184,14 +189,14 @@ nav {
 
         h2 {
             @include header;
-            width: 500px;
+            width: 40vw;
         }
-    
+
         p {
-           @include paragraph;
-            width: 400px;
+            @include paragraph;
+            width: 30vw;
         }
-    
+
         .why-btn {
             background-color: $btnColor;
             color: $header;
@@ -236,11 +241,11 @@ nav {
         h2 {
             @include header;
         }
-    
+
         p {
             @include paragraph;
             font-size: 1.8rem !important;
-            width: 510px;
+            width: 38vw;
         }
     }
 }
@@ -250,8 +255,8 @@ nav {
     top: 55%;
     left: 25%;
     background-color: $header;
-    width: 700px;
-    height: 250px;
+    width: 50vw;
+    height: 35vh;
     padding: 40px 30px;
     border-radius: 15px;
     filter: drop-shadow(5px 5px 5px rgba(9, 4, 19, 0.5));
@@ -328,7 +333,7 @@ nav {
         display: flex;
         flex-direction: column;
         gap: 5px;
-        margin-top: 50px;
+        // margin-top: 50px;
 
         .abs-flex-col-txt-1 {
             color: #3671E9;
@@ -349,6 +354,209 @@ nav {
         .abs-flex-col-txt-3 {
             font-size: 1.6rem;
             color: #828282;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .menu {
+        background-color: #E0E0E0;
+        cursor: pointer;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .section {
+        flex-direction: column;
+
+        .intro {
+            margin-left: 20px;
+
+            .offer {
+                width: 80vw;
+                font-size: 1.3rem;
+            }
+
+            .txt-1 {
+                font-size: 1.4rem;
+            }
+
+            h1 {
+                font-size: 3.5rem;
+                width: 100%;
+            }
+
+            .intro-txt {
+                font-size: 1.4rem;
+                width: 100%;
+            }
+        }
+
+        .intro-img {
+            margin-top: 50px;
+            margin-left: 30px;
+            width: 80%;
+        }
+
+        .intro-effect-1 {
+            border: 1px solid red;
+            width: 100%;
+            top: 80%;
+            left: 0;
+        }
+
+        .intro-effect-2 {
+            border: 1px solid red;
+            width: 100%;
+            top: 50%;
+            right: 0;
+        }
+    }
+
+    .stats {
+        flex-direction: column;
+        margin-left: 30px;
+        gap: 30px;
+
+        .stats-flex {
+            .stats-img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .stats-flex-2 {
+
+                h2 {
+                    font-size: 3.0rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .why {
+        margin-left: 20px;
+        gap: 30px;
+
+        .why-img {
+            width: 90%;
+        }
+
+        .why-flex {
+            h2 {
+                font-size: 3.5rem;
+                width: 100%;
+            }
+
+            p {
+                font-size: 1.4rem;
+                width: 100%;
+            }
+        }
+
+        .why-effect-1 {
+            border: 1px solid red;
+            // left: -1%;
+            width: 100%;
+        }
+
+        .why-effect-2 {
+            border: 1px solid red;
+            // left: -1%;
+            width: 100%;
+        }
+
+        .why-effect-3 {
+            border: 1px solid red;
+            // left: -1%;
+            width: 100%;
+        }
+    }
+
+    .earn {
+        margin-left: 30px;
+
+        .earn-flex-1 {
+
+            h2 {
+                font-size: 3.5rem;
+            }
+
+            p {
+                font-size: 1.4rem !important;
+                width: 100%;
+            }
+        }
+    }
+
+    .abs {
+        width: 100%;
+        height: 100%;
+        left: -5%;
+
+        .abs-flex-row {
+            flex-direction: column;
+
+            .abs-dot {
+                display: none;
+            }
+
+            .abs-btn {
+                margin-top: 0;
+            }
+
+            .abs-flex-1 {
+                margin-left: 50px;
+
+                // p {
+                //     font-size: 1.8rem;
+                // }
+
+                hr {
+                    width: 200px;
+                }
+            }
+
+            .abs-flex-2 {
+
+                // margin-right: 100px;
+                hr {
+                    width: 45px;
+                    margin-left: 95px;
+                }
+
+                .abs-flex-3 {
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .abs-btn {
+                margin-left: 50px;
+            }
+        }
+
+        .abs-flex-col {
+            gap: 15px;
+            margin-top: -15px;
+            .abs-flex-col-txt-2 {
+                font-size: 2.5rem;
+            }
+
+            .abs-flex-col-txt-3 {
+                font-size: 1.4rem;
+                // margin-bottom: 30px;
+            }
         }
     }
 }

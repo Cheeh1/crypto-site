@@ -1,11 +1,11 @@
 import React from "react";
-import { arrow, arrowDown, logo } from "../assets";
+import { arrow, arrowDown, logo, menu, close } from "../assets";
 
 const Product = () => {
   return (
     <>
       <main className="container">
-        <nav>
+        <nav className="desktop-nav">
           <img src={logo} alt="CRAPPO" />
           <div className="nav-list">
             <ul>
@@ -29,6 +29,16 @@ const Product = () => {
               <div className="divider"></div>
               <button className="register">Register</button>
             </div>
+          </div>
+        </nav>
+
+        {/* Mobile Navbar */}
+        <nav className="mobile-nav">
+          <img src={logo} alt="CRAPPO" />
+
+          <div className="menu">
+            <img src={menu} alt="menu" />
+            {/* <img src={close} alt="close" /> */}
           </div>
         </nav>
 

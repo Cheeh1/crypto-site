@@ -13,9 +13,11 @@ import arrowBg from "./icons/Arrow-bg.png";
 import btcYellow from "./icons/bitcoin-yellow.png";
 import eth from "./icons/ethereum.png";
 import ltc from "./icons/litecoin.png";
+import menu from "./icons/hamburger.png"
+import close from "./icons/close.png"
 
 export {
     logo, visa, mastercard, btc, facebook,
     twitter, instagram, youtube, linkedin, arrow,
-    arrowDown, btcYellow, eth, ltc, arrowBg
+    arrowDown, btcYellow, eth, ltc, arrowBg, menu, close
 }

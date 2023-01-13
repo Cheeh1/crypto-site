@@ -77,3 +77,29 @@
         gap: 30px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .ftr {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .ftr-flex-2 {
+        align-items: center;
+
+        .ftr-header-2 {
+            text-align: center;
+        }
+    }
+
+    .ftr-2 {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+
+        .ftr-2-txt {
+            text-align: center;
+        }
+    }
+}
