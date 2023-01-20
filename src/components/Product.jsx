@@ -34,7 +34,7 @@ const Product = () => {
 
         {/* Mobile Navbar */}
         <nav className="mobile-nav">
-          <img src={logo} alt="CRAPPO" />
+          <img className="mobile-nav-img" src={logo} alt="CRAPPO" />
 
           <div className="menu">
             <img src={menu} alt="menu" />

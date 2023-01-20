@@ -78,7 +78,7 @@ nav {
             background-color: #2e2e35;
             color: $header;
             border-radius: 10px;
-            width: 25vw;
+            width: 27vw;
             padding-top: 5px;
             padding-bottom: 5px;
             letter-spacing: 0.01rem;
@@ -361,10 +361,14 @@ nav {
 @media screen and (max-width: 480px) {
     .mobile-nav {
         display: flex;
-        justify-content: space-evenly;
+    }
+
+    .mobile-nav-img {
+        margin-right: -50px;
     }
 
     .menu {
+        margin-left: -10px;
         background-color: #E0E0E0;
         cursor: pointer;
     }
@@ -406,14 +410,12 @@ nav {
         }
 
         .intro-effect-1 {
-            border: 1px solid red;
             width: 100%;
             top: 80%;
             left: 0;
         }
 
         .intro-effect-2 {
-            border: 1px solid red;
             width: 100%;
             top: 50%;
             right: 0;
@@ -465,20 +467,14 @@ nav {
         }
 
         .why-effect-1 {
-            border: 1px solid red;
-            // left: -1%;
             width: 100%;
         }
 
         .why-effect-2 {
-            border: 1px solid red;
-            // left: -1%;
             width: 100%;
         }
 
         .why-effect-3 {
-            border: 1px solid red;
-            // left: -1%;
             width: 100%;
         }
     }
