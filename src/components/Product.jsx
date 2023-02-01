@@ -44,9 +44,10 @@ const Product = () => {
           <img className="mobile-nav-img" src={logo} alt="CRAPPO" />
 
           <div onClick={openModal} className="menu">
-           { !modalState ? (<img src={menu} alt="menu" />)
+            <img src={menu} alt="menu" />
+           {/* { !modalState ? (<img src={menu} alt="menu" />)
             : (<img src={close} alt="close" />)
-            }
+            } */}
           </div>
         </nav>
 
