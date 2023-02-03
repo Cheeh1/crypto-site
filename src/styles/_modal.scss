@@ -1,0 +1,87 @@
+.display {
+    display: none;
+}
+
+// .fixed {
+//     position: fixed;
+// }
+
+.modal {
+    background-color: rgb(1, 1, 71);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    .modal-close {
+        margin-left: 80%;
+        margin-top: 30px;
+        width: 10%;
+        margin-bottom: -20px;
+        cursor: pointer;
+        background-color: #ffff;
+    }
+
+    .modal-list {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        .modal-list-1 {
+            display: flex;
+            flex-direction: column;
+            list-style-type: none;
+            align-items: center;
+            gap: 50px;
+            color: rgb(244, 242, 242);
+            font-size: 2.5rem;
+            font-weight: 600;
+            // justify-content: center;
+
+            p {
+                cursor: pointer;
+            }
+        }
+
+        .modal-list-2 {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            color: rgb(244, 242, 242);
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-bottom: 300px;
+
+            .login {
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .modal-line {
+                border: 1px solid rgb(244, 242, 242);
+            }
+
+            .register {
+                display: flex;
+                align-items: center;
+                background-color: blue;
+                color: rgb(244, 242, 242);
+                padding: 10px 20px;
+                border-radius: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 890px) {
+    .display {
+        display: none;
+    }
+
+    .active {
+        display: block;
+    }
+}

@@ -1,7 +1,14 @@
-import React from "react";
+import {React, useState} from "react";
+import Modal from "./Modal";
 import { arrow, arrowDown, logo, menu, close } from "../assets";
 
 const Product = () => {
+  const [modalState, setModalState] = useState(false)
+
+  const openModal = () => {
+    setModalState(!modalState)
+  }
+
   return (
     <>
       <main className="container">
@@ -36,9 +43,11 @@ const Product = () => {
         <nav className="mobile-nav">
           <img className="mobile-nav-img" src={logo} alt="CRAPPO" />
 
-          <div className="menu">
+          <div onClick={openModal} className="menu">
             <img src={menu} alt="menu" />
-            {/* <img src={close} alt="close" /> */}
+           {/* { !modalState ? (<img src={menu} alt="menu" />)
+            : (<img src={close} alt="close" />)
+            } */}
           </div>
         </nav>
 
@@ -172,6 +181,8 @@ const Product = () => {
           </div>
         </section>
       </main>
+
+      <Modal toggle={modalState} action={openModal}/> 
     </>
   );
 };
