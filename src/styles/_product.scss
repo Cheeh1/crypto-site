@@ -325,6 +325,7 @@ nav {
             border-radius: 24px;
             font-size: 1.6rem;
             margin-top: -20px;
+            padding: 10px 20px;
             cursor: pointer;
         }
     }
@@ -384,7 +385,8 @@ nav {
             margin-left: 20px;
 
             .offer {
-                width: 100%;
+                // width: 87%; changes the element width when screen is adjusted
+                width: 300px; // it is fixed even when the screen is adjusted
                 font-size: 1.3rem;
             }
 
