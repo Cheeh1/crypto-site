@@ -3,9 +3,10 @@ import { close } from "../assets";
 
 const Modal = (props) => {
     const modalState = props.toggle
+    const action = props.action
     return (
         <>
-            <main className={("display") ("modalState ? active : '' ")}>
+            <main className={modalState ? 'active' : 'display'}>
                 <section className="modal">
                     <img className="modal-close" onClick={action} src={close} alt="closeBtn" />
                     <div className="modal-list">
