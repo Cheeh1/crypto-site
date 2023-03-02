@@ -1,7 +1,14 @@
 import React from "react";
 import { arrow, btcYellow, eth, ltc, arrowBg } from "../assets";
+import { motion } from 'framer-motion'
 
 const Crypto = () => {
+
+    const container = {
+      visible: { opacity: 1, transition: { delay: 0.5, duration: 1.5}},
+      hidden: { opacity: 0 }
+    }; 
+
   return (
     <>
       <section className="crypto-container">
@@ -9,7 +16,7 @@ const Crypto = () => {
           Trade securely and market the high growth cryptocurrencies.
         </h2>
         <div className="crypto-box">
-          <div className="box-item-1">
+          <motion.div initial="hidden" animate={controls} variants={container} className="box-item-1">
             <img className="box-img" src={btcYellow} alt="bitcoin" />
             <h3 className="box-header-1">
               Bitcoin<sup className="sup-1">BTC</sup>
@@ -22,9 +29,9 @@ const Crypto = () => {
               <img src={arrow} alt="arrow" />
             </div>
             <img className="box-logo" src={arrowBg} alt="transparent-arrow" />
-          </div>
+          </motion.div>
 
-          <div className="box-item-1">
+          <motion.div initial="hidden" animate={controls} variants={container} className="box-item-1">
             <img className="box-img" src={eth} alt="ethereum" />
             <h3 className="box-header-1">
               Ethereum<sup className="sup-1">ETH</sup>
@@ -38,9 +45,9 @@ const Crypto = () => {
               <img src={arrow} alt="arrow" />
             </div>
             <img className="box-logo" src={arrowBg} alt="transparent-arrow" />
-          </div>
+          </motion.div>
 
-          <div className="box-item-1">
+          <motion.div initial="hidden" animate={controls} variants={container} className="box-item-1">
             <img className="box-img" src={ltc} alt="litecoin" />
             <h3 className="box-header-1">
               Litecoin<sup className="sup-1">LTC</sup>
@@ -54,10 +61,11 @@ const Crypto = () => {
               <img src={arrow} alt="arrow" />
             </div>
             <img className="box-logo" src={arrowBg} alt="transparent-arrow" />
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
   );
 };
 export default Crypto;
+

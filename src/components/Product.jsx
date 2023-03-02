@@ -1,6 +1,7 @@
 import {React, useState} from "react";
 import Modal from "./Modal";
 import { arrow, arrowDown, logo, menu, close } from "../assets";
+import { motion } from 'framer-motion'
 
 const Product = () => {
   const [modalState, setModalState] = useState(false)
