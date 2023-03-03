@@ -16,7 +16,7 @@ const Crypto = () => {
           Trade securely and market the high growth cryptocurrencies.
         </h2>
         <div className="crypto-box">
-          <motion.div initial="hidden" animate={controls} variants={container} className="box-item-1">
+          <motion.div initial="hidden" animate="visible" variants={container} className="box-item-1">
             <img className="box-img" src={btcYellow} alt="bitcoin" />
             <h3 className="box-header-1">
               Bitcoin<sup className="sup-1">BTC</sup>
@@ -31,7 +31,7 @@ const Crypto = () => {
             <img className="box-logo" src={arrowBg} alt="transparent-arrow" />
           </motion.div>
 
-          <motion.div initial="hidden" animate={controls} variants={container} className="box-item-1">
+          <motion.div initial="hidden" animate="visible" variants={container} className="box-item-1">
             <img className="box-img" src={eth} alt="ethereum" />
             <h3 className="box-header-1">
               Ethereum<sup className="sup-1">ETH</sup>
@@ -47,7 +47,7 @@ const Crypto = () => {
             <img className="box-logo" src={arrowBg} alt="transparent-arrow" />
           </motion.div>
 
-          <motion.div initial="hidden" animate={controls} variants={container} className="box-item-1">
+          <motion.div initial="hidden" animate="visible" variants={container} className="box-item-1">
             <img className="box-img" src={ltc} alt="litecoin" />
             <h3 className="box-header-1">
               Litecoin<sup className="sup-1">LTC</sup>
